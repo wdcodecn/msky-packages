@@ -11,11 +11,13 @@ Public shared libraries for msky frontends.
 
 ```json
 {
-  "@msky/shared": "github:wdcodecn/msky-packages#main:packages/shared",
-  "@msky/ui": "github:wdcodecn/msky-packages#main:packages/ui"
+  "@msky/shared": "github:wdcodecn/msky-packages#main&path:packages/shared",
+  "@msky/ui": "github:wdcodecn/msky-packages#main&path:packages/ui"
 }
 ```
 
-Test environment: use branch `test` instead of `main`.
+Test environment: replace `#main` with `#test`.
+
+Dockerfile install stage must include `apk add --no-cache git`.
 
 Docker builds need `git` in the install stage for GitHub dependencies.

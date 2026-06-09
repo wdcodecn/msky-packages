@@ -1,0 +1,5 @@
+{
+  "name": "msky-packages",
+  "private": true,
+  "packageManager": "pnpm@10.10.0"
+}
